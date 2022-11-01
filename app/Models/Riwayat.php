@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Riwayat extends Model
 {
-    protected $table = 'riwayats';
+    protected $table = 'riwayat';
     use HasFactory;
     public $guarded = ['id'];
 }

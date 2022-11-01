@@ -21,7 +21,7 @@ class BasementController extends Controller
      */
     public function index()
     {
-        $basement = Inventaris::where('namaBarang','LIKE BINARY','%%Basement%%')->get();
+        $basement = Inventaris::where('lokasi','LIKE BINARY','%%Basement%%')->get();
         return view('basement.index', compact('basement'));
     }
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRiwayatsTable extends Migration
+class CreateRiwayatTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateRiwayatsTable extends Migration
      */
     public function up()
     {
-        Schema::create('riwayats', function (Blueprint $table) {
+        Schema::create('riwayat', function (Blueprint $table) {
             $table->id();
             $table->date('tglpeminjaman');
             $table->string('peminjam');
@@ -23,7 +23,7 @@ class CreateRiwayatsTable extends Migration
             $table->string('lokasi1');
             $table->string('kondisi1');
             $table->string('bagiansarpras');
-            $table->date('tglpengembalian');
+            $table->date('tglpengembalian')->nullable();
             $table->timestamps();
         });
     }

@@ -138,7 +138,7 @@
                                     <td><label class="form-label">Tanggal Pengembalian</label></td>
                                     <td>:</td>
                                     <td>
-                                        <input type="text" class="form-control  @error('tglpengembalian') is-invalid @enderror" name="tglpengembalian">
+                                        <input type="date" class="form-control  @error('tglpengembalian') is-invalid @enderror" name="tglpengembalian">
                                         @error('tglpengembalian')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

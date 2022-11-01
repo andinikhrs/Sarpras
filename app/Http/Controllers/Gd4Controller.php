@@ -21,7 +21,7 @@ class Gd4Controller extends Controller
      */
     public function index()
     {
-        $gd4 = Inventaris::where('namaBarang','LIKE BINARY','%Gd.4%')->get();
+        $gd4 = Inventaris::where('lokasi','LIKE BINARY','%Gd.4%')->get();
         return view('gd4.index', compact('gd4'));
     }
 

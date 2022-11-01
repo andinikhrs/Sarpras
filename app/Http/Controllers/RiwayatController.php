@@ -48,7 +48,6 @@ class RiwayatController extends Controller
             'lokasi1' => 'required',
             'kondisi1' => 'required',
             'bagiansarpras' => 'required',
-            'tglpengembalian' => 'required',
         ]);
 
         $riwayat = new Riwayat();

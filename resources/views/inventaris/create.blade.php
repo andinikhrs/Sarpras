@@ -18,7 +18,7 @@
                                     <td><label class="form-label">Kode</label></td>
                                     <td>:</td>
                                     <td>
-                                        <input type="number" style=”width:100%;” class="form-control  @error('kode') is-invalid @enderror" name="kode">
+                                        <input type="text" style=”width:100%;” class="form-control  @error('kode') is-invalid @enderror" name="kode">
                                         @error('kode')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

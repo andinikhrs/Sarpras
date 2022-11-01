@@ -21,7 +21,7 @@ class LtEGdDController extends Controller
      */
     public function index()
     {
-        $ltegdd = Inventaris::where('namaBarang','LIKE BINARY','%Lt.4 Gd.2%')->get();
+        $ltegdd = Inventaris::where('lokasi','LIKE BINARY','%Lt.4 Gd.2%')->get();
         return view('ltegdd.index', compact('ltegdd'));
     }
 

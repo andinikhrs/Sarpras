@@ -48,7 +48,7 @@ class InventarisController extends Controller
     {
         // validasi
         $validated = $request->validate([
-            'kode' => 'required|unique:inventaris', 
+            'kode' => 'required', 
             'namaBarang' => 'required',
             'merk' => 'required',
             'jumlah' => 'required',
@@ -110,7 +110,7 @@ class InventarisController extends Controller
     {
         // Validasi
         $validated = $request->validate([
-            'kode' => 'required|unique:inventaris',
+            'kode' => 'required',
             'namaBarang' => 'required',
             'merk' => 'required',
             'jumlah' => 'required',

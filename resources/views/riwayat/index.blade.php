@@ -44,7 +44,13 @@
                                         <td>{{ $data->lokasi1 }}</td>
                                         <td>{{ $data->kondisi1 }}</td>
                                         <td>{{ $data->bagiansarpras }}</td> 
-                                        <td>{{ date('d M Y', strtotime($data->tglpengembalian)) }}</td>
+                                        <td>
+                                            @if($data->tglpengembalian == NULL)
+                                                Belum Dikembalikan
+                                            @else
+                                                {{ date('d M Y', strtotime($data->tglpengembalian)) }}
+                                            @endif
+                                        </td>
                                         <td>
                                             <form action="{{ route('riwayat.destroy', $data->id) }}" method="post">
                                                 @csrf
